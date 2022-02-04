@@ -42,6 +42,14 @@ body {
   src: local(""), url("/dist/fonts/barlow-v11-latin/barlow-v11-latin-600.eot?#iefix") format("embedded-opentype"), url("/dist/fonts/barlow-v11-latin/barlow-v11-latin-600.woff2") format("woff2"), url("/dist/fonts/barlow-v11-latin/barlow-v11-latin-600.woff") format("woff"), url("/dist/fonts/barlow-v11-latin/barlow-v11-latin-600.ttf") format("truetype"), url("/dist/fonts/barlow-v11-latin/barlow-v11-latin-600.svg#Barlow") format("svg");
   /* Legacy iOS */
 }
+ul > li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
 .nav {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -50,23 +58,46 @@ body {
 .nav-logo {
   margin-bottom: 40px;
 }
+.nav-menu {
+  width: 100%;
+}
 .nav-menu__icon {
   justify-self: flex-end;
 }
 .nav-menu__list {
-  display: none;
-  width: 80%;
   grid-column: 1/-1;
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
   padding: 0;
+  margin: 0;
   text-align: center;
   background-color: #fffcf8;
 }
 .nav-menu__item {
   padding: 15px 0;
   list-style-type: none;
+}
+.nav-menu__item--contact button {
+  background-color: #fbd600;
+  border-radius: 30px;
+  padding: 12px 24px;
+  border: none;
+  margin: 20px 0;
+}
+.nav .triangle {
+  width: 0;
+  height: 0;
+  top: 1px;
+  align-self: end;
+  border-style: solid;
+  border-width: 0 0 24px 24px;
+  border-color: transparent transparent #fffcf8 transparent;
+  grid-column: 2;
+}
+
+.nav-menu {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  grid-column: 1/-1;
 }
 
 .header {
@@ -76,4 +107,22 @@ body {
   .header {
     background-image: url("/src/images/desktop/image-header.jpg");
   }
+}
+
+.nav-menu__item > * {
+  text-decoration: none;
+  font-family: "Barlow";
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 25px;
+  color: #808397;
+}
+
+.nav-menu__item--contact > button {
+  font-family: "Fraunces";
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: -0.1071428582px;
+  color: #000000;
 }

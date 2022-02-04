@@ -1,6 +1,20 @@
 @use "../variables/colors" as colors;
 @import "../variables/breakpoints";
 
-.a {
-	color: rebeccapurple;
+.nav-menu__item > * {
+	text-decoration: none;
+	font-family: "Barlow";
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 25px;
+	color: colors.$navigation-gray;
+}
+
+.nav-menu__item--contact > button {
+	font-family: "Fraunces";
+	font-size: 15px;
+	font-weight: 700;
+	line-height: 25px;
+	letter-spacing: -0.1071428582072258px;
+	color: colors.$black;
 }
