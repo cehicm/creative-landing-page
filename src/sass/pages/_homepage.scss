@@ -1,0 +1,41 @@
+@use "../variables/colors" as colors;
+@import "../variables/breakpoints";
+
+.main__item {
+	&__img {
+		.item__image {
+			img {
+				width: 100%;
+			}
+		}
+	}
+
+	&__bg-img {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		height: 70vh;
+	}
+
+	&--design {
+		background-image: url("/src/images/mobile/image-graphic-design.jpg");
+		background-size: cover;
+
+		@include sc-breakpoint(1024) {
+			background-image: url("/src/images/desktop/image-graphic-design.jpg");
+		}
+	}
+
+	&--photography {
+		background-image: url("/src/images/mobile/image-photography.jpg");
+		background-size: cover;
+
+		@include sc-breakpoint(1024) {
+			background-image: url("/src/images/desktop/image-photography.jpg");
+		}
+	}
+
+	&__content {
+		padding: 40px;
+	}
+}

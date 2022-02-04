@@ -1,6 +1,7 @@
 @use "../variables/colors" as colors;
 @import "../variables/breakpoints";
 
+//Header & Navigation
 .header-title {
 	font-family: "Fraunces";
 	font-size: 40px;
@@ -25,6 +26,82 @@
 	font-size: 15px;
 	font-weight: 700;
 	line-height: 25px;
-	letter-spacing: -0.1071428582072258px;
 	color: colors.$black;
+}
+
+//Main section
+.main {
+	&__wrapper {
+		text-align: center;
+	}
+
+	&__item {
+		&__title {
+			font-family: "Fraunces";
+			font-weight: 900;
+			margin: 0;
+		}
+
+		&__text {
+			font-family: "Barlow";
+			font-weight: 600;
+		}
+
+		&__link {
+			font-family: "Fraunces";
+			font-size: 15px;
+			font-weight: 900;
+			line-height: 25px;
+			letter-spacing: 1px;
+			color: colors.$black;
+
+			&::after {
+				content: "";
+				position: absolute;
+				display: block;
+				height: 9px;
+				width: 30%;
+				right: 50%;
+				transform: translate(50%, -120%);
+				border-radius: 6px;
+				background-color: colors.$light-yellow;
+				opacity: 0.25;
+				z-index: -1;
+			}
+
+			&--pink {
+				&::after {
+					background-color: colors.$link-coral;
+				}
+			}
+		}
+	}
+}
+
+.main__item__img {
+	.main__item__title {
+		font-size: 32px;
+		line-height: 39px;
+	}
+
+	.main__item__text {
+		font-size: 18px;
+		line-height: 30px;
+		padding: 35px 0;
+		margin: 0;
+		color: colors.$navigation-gray;
+	}
+}
+
+.main__item__bg-img {
+	.main__item__title {
+		font-size: 28px;
+		line-height: 35px;
+	}
+
+	.main__item__text {
+		font-size: 16px;
+		line-height: 27px;
+		color: colors.$lighter-black;
+	}
 }

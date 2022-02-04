@@ -71,10 +71,10 @@
 			</div>
 		</header>
 
-		<section class="section-main">
-			<div class="section-main__wrapper">
-				<div class="section-main__item section-main__transform">
-					<picture class="main__item__image">
+		<section class="main__section">
+			<div class="main__wrapper">
+				<div class="main__item main__item__img main__transform">
+					<picture class="item__image">
 						<source
 							srcset="/src/images/desktop/image-transform.jpg"
 							media="(min-width: 1024px)"
@@ -85,18 +85,18 @@
 						/>
 						<img src="/src/images/mobile/image-transform.jpg" alt="an egg" />
 					</picture>
-					<div class="item__text">
-						<h2>Transform your brand</h2>
-						<p>
+					<div class="main__item__content">
+						<h2 class="main__item__title">Transform your brand</h2>
+						<p class="main__item__text">
 							We are a full-service creative agency specializing in helping
 							brands grow fast. Engage your clients through compelling visuals
 							that do most of the marketing for you.
 						</p>
-						<a href="#">LEARN MORE</a>
+						<a class="main__item__link" href="#">LEARN MORE</a>
 					</div>
 				</div>
-				<div class="section-main__item section-main__item--stand-out">
-					<picture class="main__item__image">
+				<div class="main__item main__item__img main__item--stand-out">
+					<picture class="item__image">
 						<source
 							srcset="/src/images/desktop/image-stand-out.jpg"
 							media="(min-width: 1024px)"
@@ -109,31 +109,37 @@
 							src="/src/images/mobile/image-stand-out.jpg"
 							alt="a milkshake"
 						/>
-						<div class="item__text">
-							<h3>Stand out to the right audience</h3>
-							<p>
+						<div class="main__item__content">
+							<h3 class="main__item__title">Stand out to the right audience</h3>
+							<p class="main__item__text">
 								Using a collaborative formula of designers, researchers,
 								photographers, videographers, and copywriters, we’ll build and
 								extend your brand in digital places.
 							</p>
-							<a href="#">LEARN MORE</a>
+							<a class="main__item__link main__item__link--pink" href="#"
+								>LEARN MORE</a
+							>
 						</div>
 					</picture>
 				</div>
-				<div class="section-main__item section-main__item--design">
-					<h3>Graphic Design</h3>
-					<p>
-						Great design makes you memorable. We deliver artwork that
-						underscores your brand message and captures potential clients’
-						attention.
-					</p>
+				<div class="main__item main__item__bg-img main__item--design">
+					<div class="main__item__content">
+						<h3 class="main__item__title">Graphic Design</h3>
+						<p class="main__item__text">
+							Great design makes you memorable. We deliver artwork that
+							underscores your brand message and captures potential clients’
+							attention.
+						</p>
+					</div>
 				</div>
-				<div class="section-main__item section-main__item--photography">
-					<h3>Photography</h3>
-					<p>
-						Increase your credibility by getting the most stunning, high-quality
-						photos that improve your business image.
-					</p>
+				<div class="main__item main__item__bg-img main__item--photography">
+					<div class="main__item__content">
+						<h3 class="main__item__title">Photography</h3>
+						<p class="main__item__text">
+							Increase your credibility by getting the most stunning,
+							high-quality photos that improve your business image.
+						</p>
+					</div>
 				</div>
 			</div>
 		</section>
