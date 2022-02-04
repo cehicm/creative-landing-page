@@ -311,6 +311,14 @@ a {
   color: #a7aaad;
 }
 
+.footer-menu__item {
+  font-family: "Barlow";
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 25px;
+  color: #458d7e;
+}
+
 .main__item__img .item__image img {
   width: 100%;
 }

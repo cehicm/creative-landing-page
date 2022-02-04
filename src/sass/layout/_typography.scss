@@ -142,3 +142,14 @@
 		}
 	}
 }
+
+//Footer
+.footer {
+	&-menu__item {
+		font-family: "Barlow";
+		font-size: 18px;
+		font-weight: 600;
+		line-height: 25px;
+		color: colors.$footer-link-green;
+	}
+}
