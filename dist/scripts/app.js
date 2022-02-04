@@ -1,1 +1,1 @@
-"use strict";
+"use strict";jQuery,$(".nav-menu__icon").on("click",(function(){$(this).nextAll().slideToggle("slow")}));

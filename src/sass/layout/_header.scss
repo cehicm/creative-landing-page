@@ -1,0 +1,10 @@
+@use "../variables/colors" as colors;
+@import "../variables/breakpoints";
+
+.header {
+	background-image: url("/src/images/mobile/image-header.jpg");
+
+	@include sc-breakpoint(1024) {
+		background-image: url("/src/images/desktop/image-header.jpg");
+	}
+}
