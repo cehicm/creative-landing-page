@@ -1,11 +1,34 @@
 @use "../variables/colors" as colors;
 @import "../variables/breakpoints";
 
+//Genereal/repeating styles
+.nav-menu__item > * .main__item__text,
+.testimonials__item__role,
+.testimonials__item__role,
+.footer-menu__item {
+	font-family: "Barlow";
+	font-weight: 600;
+}
+
+.header-title,
+.main__item__title,
+.testimonials__title,
+.testimonials__item__name,
+.main__item__link {
+	font-family: "Fraunces";
+	font-weight: 900;
+}
+
+.main__item__text,
+.testimonials__item__text,
+.testimonials__item__name,
+.footer-menu__item {
+	font-size: 18px;
+}
+
 //Header & Navigation
 .header-title {
-	font-family: "Fraunces";
 	font-size: 40px;
-	font-weight: 900;
 	line-height: 49px;
 	letter-spacing: 6.25px;
 	text-align: center;
@@ -14,17 +37,15 @@
 
 .nav-menu__item > * {
 	text-decoration: none;
-	font-family: "Barlow";
 	font-size: 20px;
-	font-weight: 600;
 	line-height: 25px;
 	color: colors.$navigation-gray;
 }
 
 .nav-menu__item--contact > button {
 	font-family: "Fraunces";
-	font-size: 15px;
 	font-weight: 700;
+	font-size: 15px;
 	line-height: 25px;
 	color: colors.$black;
 }
@@ -36,21 +57,8 @@
 	}
 
 	&__item {
-		&__title {
-			font-family: "Fraunces";
-			font-weight: 900;
-			margin: 0;
-		}
-
-		&__text {
-			font-family: "Barlow";
-			font-weight: 600;
-		}
-
 		&__link {
-			font-family: "Fraunces";
 			font-size: 15px;
-			font-weight: 900;
 			line-height: 25px;
 			letter-spacing: 1px;
 			color: colors.$black;
@@ -85,7 +93,6 @@
 	}
 
 	.main__item__text {
-		font-size: 18px;
 		line-height: 30px;
 		padding: 35px 0;
 		margin: 0;
@@ -109,9 +116,7 @@
 //Testimonials
 .testimonials {
 	&__title {
-		font-family: "Fraunces";
 		font-size: 16px;
-		font-weight: 900;
 		line-height: 20px;
 		letter-spacing: 4px;
 		color: colors.$testimonials-role-gray;
@@ -119,24 +124,16 @@
 
 	&__item {
 		&__text {
-			font-family: "Barlow";
-			font-size: 18px;
-			font-weight: 600;
 			line-height: 32px;
 			color: colors.$testimonials-charcoal-gray;
 		}
 
 		&__name {
-			font-family: "Fraunces";
-			font-size: 18px;
-			font-weight: 900;
 			line-height: 22px;
 		}
 
 		&__role {
-			font-family: Barlow;
 			font-size: 14px;
-			font-weight: 600;
 			line-height: 25px;
 			color: colors.$testimonials-role-gray;
 		}
@@ -146,9 +143,6 @@
 //Footer
 .footer {
 	&-menu__item {
-		font-family: "Barlow";
-		font-size: 18px;
-		font-weight: 600;
 		line-height: 25px;
 		color: colors.$footer-link-green;
 	}
