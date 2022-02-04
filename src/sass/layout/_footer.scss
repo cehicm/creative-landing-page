@@ -1,0 +1,31 @@
+@use "../variables/colors" as colors;
+@import "../variables/breakpoints";
+
+.footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 100px 20px;
+	background-color: colors.$footer-green;
+
+	&-logo {
+		padding-bottom: 20px;
+
+		svg > path {
+			fill: colors.$footer-dark-gren;
+		}
+	}
+
+	&-menu {
+		display: flex;
+		justify-content: space-evenly;
+		width: 100%;
+		padding-bottom: 50px;
+	}
+
+	&-social {
+		display: flex;
+		justify-content: space-evenly;
+		width: 60%;
+	}
+}
