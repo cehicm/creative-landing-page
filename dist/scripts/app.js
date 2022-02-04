@@ -1,1 +1,1 @@
-"use strict";jQuery,$(".nav-menu__icon").on("click",(function(){$(this).nextAll().slideToggle("slow")}));
+"use strict";!function(){var n=$(".nav-menu__icon"),e=$(".header-content");$(n).on("click",(function(){n.nextAll().slideToggle("slow"),e.toggle()}))}(jQuery);

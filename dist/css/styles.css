@@ -59,7 +59,21 @@ a {
   margin-bottom: 40px;
 }
 .nav-menu {
+  position: relative;
+  display: none;
   width: 100%;
+  margin: 0 auto;
+  grid-column: 1/-1;
+}
+.nav-menu .triangle {
+  position: absolute;
+  width: 0;
+  height: 0;
+  right: 0px;
+  top: -24px;
+  border-style: solid;
+  border-width: 0 0 24px 24px;
+  border-color: transparent transparent #fffcf8 transparent;
 }
 .nav-menu__icon {
   justify-self: flex-end;
@@ -78,35 +92,53 @@ a {
 .nav-menu__item--contact button {
   background-color: #fbd600;
   border-radius: 30px;
-  padding: 12px 24px;
+  padding: 15px 25px;
   border: none;
   margin: 20px 0;
 }
-.nav .triangle {
-  width: 0;
-  height: 0;
-  top: 1px;
-  align-self: end;
-  border-style: solid;
-  border-width: 0 0 24px 24px;
-  border-color: transparent transparent #fffcf8 transparent;
-  grid-column: 2;
-}
-
-.nav-menu {
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-  grid-column: 1/-1;
-}
 
 .header {
+  height: 488px;
   background-image: url("/src/images/mobile/image-header.jpg");
+  background-size: cover;
+  background-position: center;
+}
+@media (min-width: 425px) {
+  .header {
+    height: 620px;
+    background-position: bottom;
+  }
 }
 @media (min-width: 1024px) {
   .header {
     background-image: url("/src/images/desktop/image-header.jpg");
   }
+}
+.header-content {
+  display: flex;
+  flex-direction: column;
+}
+.header-title {
+  margin: 0;
+  padding-top: 60px;
+}
+.header-arrow {
+  align-self: center;
+}
+@media (min-width: 425px) {
+  .header-arrow {
+    padding-top: 80px;
+  }
+}
+
+.header-title {
+  font-family: "Fraunces";
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 49px;
+  letter-spacing: 6.25px;
+  text-align: center;
+  color: #ffffff;
 }
 
 .nav-menu__item > * {

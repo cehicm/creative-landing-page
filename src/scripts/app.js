@@ -1,5 +1,8 @@
 (function () {
-	$(".nav-menu__icon").on("click", function () {
-		$(this).nextAll().slideToggle("slow");
+	const menuIcon = $(".nav-menu__icon");
+	const headerContent = $(".header-content");
+	$(menuIcon).on("click", function () {
+		menuIcon.nextAll().slideToggle("slow");
+		headerContent.toggle();
 	});
 })(jQuery);

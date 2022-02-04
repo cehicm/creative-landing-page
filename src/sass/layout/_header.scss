@@ -2,9 +2,35 @@
 @import "../variables/breakpoints";
 
 .header {
+	height: 488px;
 	background-image: url("/src/images/mobile/image-header.jpg");
+	background-size: cover;
+	background-position: center;
+
+	@include sc-breakpoint(425) {
+		height: 620px;
+		background-position: bottom;
+	}
 
 	@include sc-breakpoint(1024) {
 		background-image: url("/src/images/desktop/image-header.jpg");
+	}
+
+	&-content {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&-title {
+		margin: 0;
+		padding-top: 60px;
+	}
+
+	&-arrow {
+		align-self: center;
+
+		@include sc-breakpoint(425) {
+			padding-top: 80px;
+		}
 	}
 }

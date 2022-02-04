@@ -1,6 +1,16 @@
 @use "../variables/colors" as colors;
 @import "../variables/breakpoints";
 
+.header-title {
+	font-family: "Fraunces";
+	font-size: 40px;
+	font-weight: 900;
+	line-height: 49px;
+	letter-spacing: 6.25px;
+	text-align: center;
+	color: colors.$white;
+}
+
 .nav-menu__item > * {
 	text-decoration: none;
 	font-family: "Barlow";
