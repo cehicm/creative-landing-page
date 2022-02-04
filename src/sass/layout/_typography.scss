@@ -40,6 +40,12 @@
 	font-size: 20px;
 	line-height: 25px;
 	color: colors.$navigation-gray;
+
+	@include sc-breakpoint(1024) {
+		font-size: 18px;
+		font-weight: 600;
+		color: colors.$white;
+	}
 }
 
 .nav-menu__item--contact > button {

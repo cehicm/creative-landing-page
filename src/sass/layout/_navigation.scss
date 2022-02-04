@@ -6,6 +6,12 @@
 	grid-template-columns: repeat(2, 1fr);
 	padding: 20px;
 
+	@include sc-breakpoint(1024) {
+		display: flex;
+		align-items: baseline;
+		justify-content: space-between;
+	}
+
 	&-logo {
 		margin-bottom: 40px;
 	}
@@ -16,6 +22,11 @@
 		width: 100%;
 		margin: 0 auto;
 		grid-column: 1/-1;
+
+		@include sc-breakpoint(1024) {
+			display: contents;
+			position: fixed;
+		}
 
 		.triangle {
 			position: absolute;
@@ -30,6 +41,10 @@
 
 		&__icon {
 			justify-self: flex-end;
+
+			@include sc-breakpoint(1024) {
+				display: none;
+			}
 		}
 
 		&__list {
@@ -38,6 +53,13 @@
 			margin: 0;
 			text-align: center;
 			background-color: colors.$light-gray;
+
+			@include sc-breakpoint(1024) {
+				display: flex;
+				align-items: center;
+				gap: 50px;
+				background: none;
+			}
 		}
 
 		&__item {
@@ -48,6 +70,10 @@
 				padding: 35px 0;
 			}
 
+			@include sc-breakpoint(1024) {
+				padding: 0;
+			}
+
 			&--contact {
 				button {
 					background-color: colors.$contact-button-yellow;
@@ -55,6 +81,15 @@
 					padding: 15px 25px;
 					border: none;
 					margin: 20px 0;
+
+					@include sc-breakpoint(1024) {
+						background-color: colors.$white;
+						color: colors.$white;
+
+						&:hover {
+							background-color: colors.$hover-light-blue;
+						}
+					}
 				}
 			}
 		}
