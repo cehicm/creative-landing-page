@@ -105,3 +105,40 @@
 		color: colors.$lighter-black;
 	}
 }
+
+//Testimonials
+.testimonials {
+	&__title {
+		font-family: "Fraunces";
+		font-size: 16px;
+		font-weight: 900;
+		line-height: 20px;
+		letter-spacing: 4px;
+		color: colors.$testimonials-role-gray;
+	}
+
+	&__item {
+		&__text {
+			font-family: "Barlow";
+			font-size: 18px;
+			font-weight: 600;
+			line-height: 32px;
+			color: colors.$testimonials-charcoal-gray;
+		}
+
+		&__name {
+			font-family: "Fraunces";
+			font-size: 18px;
+			font-weight: 900;
+			line-height: 22px;
+		}
+
+		&__role {
+			font-family: Barlow;
+			font-size: 14px;
+			font-weight: 600;
+			line-height: 25px;
+			color: colors.$testimonials-role-gray;
+		}
+	}
+}

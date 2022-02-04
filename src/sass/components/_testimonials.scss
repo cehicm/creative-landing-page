@@ -1,0 +1,28 @@
+@use "../variables/colors" as colors;
+
+.section-testimonials {
+	background-color: colors.$eggshell;
+	padding: 50px 110px;
+}
+
+.testimonials {
+	&__wrapper {
+		text-align: center;
+	}
+
+	&__title {
+	}
+
+	&__list {
+	}
+
+	&__item {
+		padding-top: 60px;
+
+		img {
+			height: 72px;
+			width: 72px;
+			border-radius: 50%;
+		}
+	}
+}

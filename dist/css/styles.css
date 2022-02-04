@@ -42,12 +42,36 @@ body {
   src: local(""), url("/dist/fonts/barlow-v11-latin/barlow-v11-latin-600.eot?#iefix") format("embedded-opentype"), url("/dist/fonts/barlow-v11-latin/barlow-v11-latin-600.woff2") format("woff2"), url("/dist/fonts/barlow-v11-latin/barlow-v11-latin-600.woff") format("woff"), url("/dist/fonts/barlow-v11-latin/barlow-v11-latin-600.ttf") format("truetype"), url("/dist/fonts/barlow-v11-latin/barlow-v11-latin-600.svg#Barlow") format("svg");
   /* Legacy iOS */
 }
+.section-testimonials {
+  background-color: #fffcf8;
+  padding: 50px 110px;
+}
+
+.testimonials__wrapper {
+  text-align: center;
+}
+.testimonials__item {
+  padding-top: 60px;
+}
+.testimonials__item img {
+  height: 72px;
+  width: 72px;
+  border-radius: 50%;
+}
+
 ul > li {
   list-style: none;
 }
 
 a {
   text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
 }
 
 .nav {
@@ -215,6 +239,35 @@ a {
   font-size: 16px;
   line-height: 27px;
   color: #24554a;
+}
+
+.testimonials__title {
+  font-family: "Fraunces";
+  font-size: 16px;
+  font-weight: 900;
+  line-height: 20px;
+  letter-spacing: 4px;
+  color: #a7aaad;
+}
+.testimonials__item__text {
+  font-family: "Barlow";
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 32px;
+  color: #5b636d;
+}
+.testimonials__item__name {
+  font-family: "Fraunces";
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 22px;
+}
+.testimonials__item__role {
+  font-family: Barlow;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 25px;
+  color: #a7aaad;
 }
 
 .main__item__img .item__image img {
