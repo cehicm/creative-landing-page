@@ -75,6 +75,10 @@
 				background-color: colors.$light-yellow;
 				opacity: 0.25;
 				z-index: -1;
+
+				@include sc-breakpoint(768) {
+					width: 22%;
+				}
 			}
 
 			&--pink {

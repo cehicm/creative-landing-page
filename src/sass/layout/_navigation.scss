@@ -44,6 +44,10 @@
 			padding: 15px 0;
 			list-style-type: none;
 
+			@include sc-breakpoint(768) {
+				padding: 35px 0;
+			}
+
 			&--contact {
 				button {
 					background-color: colors.$contact-button-yellow;
