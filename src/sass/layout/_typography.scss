@@ -85,11 +85,39 @@
 				@include sc-breakpoint(768) {
 					width: 22%;
 				}
+
+				@include sc-breakpoint(1024) {
+					width: 13%;
+				}
 			}
 
 			&--pink {
 				&::after {
 					background-color: colors.$link-coral;
+				}
+			}
+		}
+
+		&__transform,
+		&__stand-out {
+			@include sc-breakpoint(1024) {
+				text-align: left;
+			}
+		}
+
+		&__transform {
+			.main__item__link::after {
+				@include sc-breakpoint(1024) {
+					left: -34px;
+					right: initial;
+				}
+			}
+		}
+
+		&__stand-out {
+			.main__item__link::after {
+				@include sc-breakpoint(1024) {
+					right: 411px;
 				}
 			}
 		}

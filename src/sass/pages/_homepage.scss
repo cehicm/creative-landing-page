@@ -6,6 +6,10 @@
 		.item__image {
 			img {
 				width: 100%;
+
+				@include sc-breakpoint(1024) {
+					height: 100%;
+				}
 			}
 		}
 	}
@@ -37,5 +41,30 @@
 
 	&__content {
 		padding: 40px;
+
+		@include sc-breakpoint(1024) {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+	}
+
+	&__transform,
+	&__stand-out {
+		@include sc-breakpoint(1024) {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+
+	&__transform {
+		.item__image {
+			grid-column: 2;
+			grid-row: 1;
+		}
+
+		.main__item__content {
+			grid-column: 1;
+		}
 	}
 }
