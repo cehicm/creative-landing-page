@@ -54,6 +54,10 @@
 	font-size: 15px;
 	line-height: 25px;
 	color: colors.$black;
+
+	&:hover {
+		cursor: pointer;
+	}
 }
 
 //Main section
@@ -78,7 +82,7 @@
 				position: absolute;
 				display: block;
 				height: 9px;
-				width: 35%;
+				width: 150px;
 				right: 50%;
 				transform: translate(50%, -120%);
 				border-radius: 6px;
@@ -86,12 +90,8 @@
 				opacity: 0.25;
 				z-index: -1;
 
-				@include sc-breakpoint(768) {
-					width: 27%;
-				}
-
 				@include sc-breakpoint(1024) {
-					transform: translate(-10px, -12px);
+					transform: translate(-15px, -12px);
 					right: auto;
 				}
 			}
@@ -112,23 +112,6 @@
 			@include sc-breakpoint(1024) {
 				text-align: left;
 			}
-		}
-
-		&__transform {
-			// .main__item__link::after {
-			// 	@include sc-breakpoint(1024) {
-			// 		// left: 15px;
-			// 		// right: initial;
-			// 	}
-			// }
-		}
-
-		&__stand-out {
-			// .main__item__link::after {
-			// 	@include sc-breakpoint(1024) {
-			// 		// right: 366px;
-			// 	}
-			// }
 		}
 	}
 }

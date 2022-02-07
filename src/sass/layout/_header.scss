@@ -14,6 +14,7 @@
 
 	@include sc-breakpoint(1024) {
 		background-image: url("/src/images/desktop/image-header.jpg");
+		height: 755px;
 	}
 
 	&-content {

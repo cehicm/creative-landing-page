@@ -10,6 +10,10 @@
 				@include sc-breakpoint(1024) {
 					height: 100%;
 				}
+
+				&:hover {
+					filter: drop-shadow(2px 4px 6px colors.$black);
+				}
 			}
 		}
 	}
@@ -22,18 +26,21 @@
 	}
 
 	&__bg-img {
+		position: relative;
 		display: flex;
 		flex-direction: column;
 		justify-content: flex-end;
-		height: 70vh;
+		height: 800px;
 
+		@include sc-breakpoint(768) {
+			height: 850px;
+		}
 		@include sc-breakpoint(1024) {
 			height: 500px;
-			justify-content: unset;
 		}
 
-		.main__item__content {
-			transform: translateY(261px);
+		@include sc-breakpoint(1820) {
+			height: 800px;
 		}
 	}
 
@@ -43,6 +50,7 @@
 
 		@include sc-breakpoint(1024) {
 			background-image: url("/src/images/desktop/image-graphic-design.jpg");
+			background-position: center;
 		}
 	}
 
@@ -52,6 +60,7 @@
 
 		@include sc-breakpoint(1024) {
 			background-image: url("/src/images/desktop/image-photography.jpg");
+			background-position: center;
 		}
 	}
 
