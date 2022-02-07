@@ -1,13 +1,25 @@
 @use "../variables/colors" as colors;
+@import "../variables/breakpoints";
 
 .section-testimonials {
 	background-color: colors.$eggshell;
 	padding: 50px 90px;
+
+	@include sc-breakpoint(1024) {
+		padding: 100px 90px;
+	}
 }
 
 .testimonials {
 	&__wrapper {
 		text-align: center;
+	}
+
+	&__list {
+		@include sc-breakpoint(1024) {
+			display: flex;
+			gap: 20px;
+		}
 	}
 
 	&__item {

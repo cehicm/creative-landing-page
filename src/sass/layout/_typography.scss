@@ -191,7 +191,19 @@
 //Footer
 .footer {
 	&-menu__item {
-		line-height: 25px;
-		color: colors.$footer-link-green;
+		a {
+			line-height: 25px;
+			color: colors.$footer-link-green;
+
+			&:hover {
+				color: colors.$white;
+			}
+		}
+	}
+
+	&-social__icon:hover {
+		path {
+			fill: white;
+		}
 	}
 }
