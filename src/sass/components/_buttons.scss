@@ -1,0 +1,15 @@
+@use "../variables/colors" as colors;
+@import "../variables/breakpoints";
+
+.btn--contact {
+	color: colors.$black;
+	background-color: colors.$white;
+
+	&:hover {
+		color: colors.$white;
+		background: colors.$button-hover-blue;
+		background: transparent;
+		mix-blend-mode: normal;
+		border-radius: 28px;
+	}
+}

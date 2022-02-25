@@ -42,6 +42,18 @@ body {
   src: local(""), url("/dist/fonts/barlow-v11-latin/barlow-v11-latin-600.eot?#iefix") format("embedded-opentype"), url("/dist/fonts/barlow-v11-latin/barlow-v11-latin-600.woff2") format("woff2"), url("/dist/fonts/barlow-v11-latin/barlow-v11-latin-600.woff") format("woff"), url("/dist/fonts/barlow-v11-latin/barlow-v11-latin-600.ttf") format("truetype"), url("/dist/fonts/barlow-v11-latin/barlow-v11-latin-600.svg#Barlow") format("svg");
   /* Legacy iOS */
 }
+.btn--contact {
+  color: #000000;
+  background-color: #ffffff;
+}
+.btn--contact:hover {
+  color: #ffffff;
+  background: rgba(61, 190, 255, 0.302);
+  background: transparent;
+  mix-blend-mode: normal;
+  border-radius: 28px;
+}
+
 .section-testimonials {
   background-color: #fffcf8;
   padding: 10%;
@@ -86,9 +98,6 @@ body {
   height: 100%;
   width: 100%;
 }
-.section-gallery .gallery__image img:hover {
-  filter: drop-shadow(2px 4px 6px #24554a);
-}
 
 * {
   scroll-behavior: smooth;
@@ -111,6 +120,14 @@ ul > li {
 
 a {
   text-decoration: none;
+}
+
+.show-menu {
+  display: block;
+}
+
+.close-menu {
+  display: none;
 }
 
 .nav {
@@ -141,12 +158,12 @@ a {
     position: fixed;
   }
 }
+.nav-menu__container {
+  display: flex;
+  flex-direction: column;
+}
 .nav-menu .triangle {
-  position: absolute;
-  width: 0;
-  height: 0;
-  right: 0px;
-  top: -24px;
+  align-self: flex-end;
   border-style: solid;
   border-width: 0 0 24px 24px;
   border-color: transparent transparent #fffcf8 transparent;
@@ -318,7 +335,6 @@ a {
   font-weight: 700;
   font-size: 15px;
   line-height: 25px;
-  color: #000000;
 }
 .nav-menu__item--contact > button:hover {
   cursor: pointer;

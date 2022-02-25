@@ -15,10 +15,6 @@
 		img {
 			height: 100%;
 			width: 100%;
-
-			&:hover {
-				filter: drop-shadow(2px 4px 6px colors.$lighter-black);
-			}
 		}
 	}
 }

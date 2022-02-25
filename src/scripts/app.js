@@ -1,8 +1,9 @@
 (function () {
 	const menuIcon = $(".nav-menu__icon");
-	const headerContent = $(".header-content");
 	$(menuIcon).on("click", function () {
-		menuIcon.nextAll().slideToggle("slow");
+		const headerContent = $(".header-content");
+
+		menuIcon.nextAll().toggle();
 		headerContent.toggle();
 	});
 })(jQuery);
