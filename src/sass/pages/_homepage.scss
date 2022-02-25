@@ -1,19 +1,17 @@
 @use "../variables/colors" as colors;
 @import "../variables/breakpoints";
 
-.main__item {
-	&__img {
-		.item__image {
-			img {
-				width: 100%;
+.main-item {
+	.item__image {
+		img {
+			width: 100%;
 
-				@include sc-breakpoint(1024) {
-					height: 100%;
-				}
+			@include sc-breakpoint(1024) {
+				height: 100%;
+			}
 
-				&:hover {
-					filter: drop-shadow(2px 4px 6px colors.$black);
-				}
+			&:hover {
+				filter: drop-shadow(2px 4px 6px colors.$black);
 			}
 		}
 	}
@@ -43,7 +41,7 @@
 		@include sc-breakpoint(1820) {
 			height: 900px;
 		}
-		.main__item__content {
+		.main-item__content {
 			@include sc-breakpoint(1820) {
 				padding: 60px 170px;
 			}
@@ -93,21 +91,21 @@
 		}
 	}
 
-	&__transform,
-	&__stand-out {
+	&--transform,
+	&--stand-out {
 		@include sc-breakpoint(1024) {
 			display: grid;
 			grid-template-columns: repeat(2, 1fr);
 		}
 	}
 
-	&__transform {
+	&--transform {
 		.item__image {
 			grid-column: 2;
 			grid-row: 1;
 		}
 
-		.main__item__content {
+		.main-item__content {
 			grid-column: 1;
 		}
 	}

@@ -2,7 +2,8 @@
 @import "../variables/breakpoints";
 
 //Genereal/repeating styles
-.nav-menu__item > * .main__item__text,
+.nav-menu__item a,
+.main-item__text,
 .testimonials__item__role,
 .testimonials__item__role,
 .footer-menu__item {
@@ -11,15 +12,15 @@
 }
 
 .header-title,
-.main__item__title,
+.main-item__title,
 .testimonials__title,
 .testimonials__item__name,
-.main__item__link {
+.main-item__link {
 	font-family: "Fraunces";
 	font-weight: 900;
 }
 
-.main__item__text,
+.main-item__text,
 .testimonials__item__text,
 .testimonials__item__name,
 .footer-menu__item {
@@ -62,11 +63,11 @@
 
 //Main section
 .main {
-	&__wrapper {
+	&-wrapper {
 		text-align: center;
 	}
 
-	&__item {
+	&-item {
 		&__content {
 			position: relative;
 		}
@@ -89,11 +90,6 @@
 				background-color: colors.$light-yellow;
 				opacity: 0.25;
 				z-index: -1;
-
-				@include sc-breakpoint(1024) {
-					transform: translate(-15px, -12px);
-					right: auto;
-				}
 			}
 
 			&:hover::after {
@@ -116,13 +112,13 @@
 	}
 }
 
-.main__item__img {
-	.main__item__title {
+.main-item__img {
+	.main-item__title {
 		font-size: 32px;
 		line-height: 39px;
 	}
 
-	.main__item__text {
+	.main-item__text {
 		line-height: 30px;
 		padding: 35px 0;
 		margin: 0;
@@ -130,14 +126,14 @@
 	}
 }
 
-.main__item__bg-img {
-	.main__item__title {
+.main-item__bg-img {
+	.main-item__title {
 		color: colors.$content-dark-green;
 		font-size: 28px;
 		line-height: 35px;
 	}
 
-	.main__item__text {
+	.main-item__text {
 		font-size: 16px;
 		line-height: 27px;
 		color: colors.$lighter-black;
