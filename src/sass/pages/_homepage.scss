@@ -2,48 +2,55 @@
 @import "../variables/breakpoints";
 
 .main-item {
-	.item__image {
-		img {
-			width: 100%;
-
-			@include sc-breakpoint(1024) {
-				height: 100%;
-			}
-
-			&:hover {
-				filter: drop-shadow(2px 4px 6px colors.$black);
-			}
-		}
-	}
-
-	&__bg-img__wrapper {
+	&__full {
 		@include sc-breakpoint(1024) {
 			display: grid;
 			grid-template-columns: repeat(2, 1fr);
 		}
+
+		.item__image {
+			img {
+				width: 100%;
+
+				@include sc-breakpoint(1024) {
+					height: 100%;
+				}
+
+				&:hover {
+					filter: drop-shadow(2px 4px 6px colors.$black);
+				}
+			}
+		}
 	}
 
-	&__bg-img {
-		position: relative;
-		display: flex;
-		flex-direction: column;
-		justify-content: flex-end;
-		height: 600px;
-
-		@include sc-breakpoint(768) {
-			height: 850px;
-		}
-
+	&__bg {
 		@include sc-breakpoint(1024) {
-			height: 600px;
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
 		}
 
-		@include sc-breakpoint(1820) {
-			height: 900px;
-		}
-		.main-item__content {
+		&-img {
+			position: relative;
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-end;
+			height: 600px;
+
+			@include sc-breakpoint(768) {
+				height: 850px;
+			}
+
+			@include sc-breakpoint(1024) {
+				height: 600px;
+			}
+
 			@include sc-breakpoint(1820) {
-				padding: 60px 170px;
+				height: 900px;
+			}
+			.main-item__content {
+				@include sc-breakpoint(1820) {
+					padding: 60px 170px;
+				}
 			}
 		}
 	}
@@ -88,14 +95,6 @@
 
 		@include sc-breakpoint(1400) {
 			padding: 40px 150px;
-		}
-	}
-
-	&--transform,
-	&--stand-out {
-		@include sc-breakpoint(1024) {
-			display: grid;
-			grid-template-columns: repeat(2, 1fr);
 		}
 	}
 

@@ -62,7 +62,7 @@
 
 //Main section
 .main {
-	&-wrapper {
+	&__wrapper {
 		text-align: center;
 	}
 
@@ -99,13 +99,6 @@
 				&::after {
 					background-color: colors.$link-coral;
 				}
-			}
-		}
-
-		&__transform,
-		&__stand-out {
-			@include sc-breakpoint(1024) {
-				text-align: left;
 			}
 		}
 	}

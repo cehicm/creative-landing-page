@@ -38,6 +38,10 @@
 			border-style: solid;
 			border-width: 0 0 24px 24px;
 			border-color: transparent transparent colors.$light-gray transparent;
+
+			@include sc-breakpoint(1024) {
+				display: none;
+			}
 		}
 
 		&__icon {
@@ -73,25 +77,6 @@
 
 			@include sc-breakpoint(1024) {
 				padding: 0;
-			}
-
-			&--contact {
-				button {
-					background-color: colors.$contact-button-yellow;
-					border-radius: 30px;
-					padding: 15px 25px;
-					border: none;
-					margin: 20px 0;
-
-					@include sc-breakpoint(1024) {
-						background-color: colors.$white;
-						color: colors.$white;
-
-						&:hover {
-							background-color: colors.$hover-light-blue;
-						}
-					}
-				}
 			}
 		}
 	}

@@ -1,1 +1,1 @@
-"use strict";!function(){var n=$(".nav-menu__icon"),e=$(".header-content");$(n).on("click",(function(){n.nextAll().slideToggle("slow"),e.toggle()}))}(jQuery);
+"use strict";!function(){var n=$(".nav-menu__icon");$(n).on("click",(function(){var e=$(".header-content");n.nextAll().toggle(),e.toggle()}))}(jQuery);

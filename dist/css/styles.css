@@ -43,15 +43,21 @@ body {
   /* Legacy iOS */
 }
 .btn--contact {
-  color: #000000;
-  background-color: #ffffff;
+  background-color: #fbd600;
+  border-radius: 30px;
+  padding: 15px 25px;
+  border: none;
+  margin: 20px 0;
 }
-.btn--contact:hover {
-  color: #ffffff;
-  background: rgba(61, 190, 255, 0.302);
-  background: transparent;
-  mix-blend-mode: normal;
-  border-radius: 28px;
+@media (min-width: 1024px) {
+  .btn--contact {
+    background-color: #ffffff;
+    color: #000000;
+  }
+  .btn--contact:hover {
+    background-color: #a5e2ff;
+    color: #ffffff;
+  }
 }
 
 .section-testimonials {
@@ -168,6 +174,11 @@ a {
   border-width: 0 0 24px 24px;
   border-color: transparent transparent #fffcf8 transparent;
 }
+@media (min-width: 1024px) {
+  .nav-menu .triangle {
+    display: none;
+  }
+}
 .nav-menu__icon {
   justify-self: flex-end;
 }
@@ -203,22 +214,6 @@ a {
 @media (min-width: 1024px) {
   .nav-menu__item {
     padding: 0;
-  }
-}
-.nav-menu__item--contact button {
-  background-color: #fbd600;
-  border-radius: 30px;
-  padding: 15px 25px;
-  border: none;
-  margin: 20px 0;
-}
-@media (min-width: 1024px) {
-  .nav-menu__item--contact button {
-    background-color: #ffffff;
-    color: #ffffff;
-  }
-  .nav-menu__item--contact button:hover {
-    background-color: #a5e2ff;
   }
 }
 
@@ -340,7 +335,7 @@ a {
   cursor: pointer;
 }
 
-.main-wrapper {
+.main__wrapper {
   text-align: center;
 }
 .main-item__content {
@@ -370,11 +365,6 @@ a {
 }
 .main-item__link--pink::after {
   background-color: #fe7766;
-}
-@media (min-width: 1024px) {
-  .main-item__transform, .main-item__stand-out {
-    text-align: left;
-  }
 }
 
 .main-item__img .main-item__title {
@@ -429,19 +419,25 @@ a {
   fill: white;
 }
 
-.main-item .item__image img {
+@media (min-width: 1024px) {
+  .main-item__full {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.main-item__full .item__image img {
   width: 100%;
 }
 @media (min-width: 1024px) {
-  .main-item .item__image img {
+  .main-item__full .item__image img {
     height: 100%;
   }
 }
-.main-item .item__image img:hover {
+.main-item__full .item__image img:hover {
   filter: drop-shadow(2px 4px 6px #000000);
 }
 @media (min-width: 1024px) {
-  .main-item__bg-img__wrapper {
+  .main-item__bg {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
@@ -517,12 +513,6 @@ a {
 @media (min-width: 1400px) {
   .main-item__content {
     padding: 40px 150px;
-  }
-}
-@media (min-width: 1024px) {
-  .main-item--transform, .main-item--stand-out {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
   }
 }
 .main-item--transform .item__image {

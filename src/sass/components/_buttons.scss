@@ -2,14 +2,19 @@
 @import "../variables/breakpoints";
 
 .btn--contact {
-	color: colors.$black;
-	background-color: colors.$white;
+	background-color: colors.$contact-button-yellow;
+	border-radius: 30px;
+	padding: 15px 25px;
+	border: none;
+	margin: 20px 0;
 
-	&:hover {
-		color: colors.$white;
-		background: colors.$button-hover-blue;
-		background: transparent;
-		mix-blend-mode: normal;
-		border-radius: 28px;
+	@include sc-breakpoint(1024) {
+		background-color: colors.$white;
+		color: colors.$black;
+
+		&:hover {
+			background-color: colors.$hover-light-blue;
+			color: colors.$white;
+		}
 	}
 }
