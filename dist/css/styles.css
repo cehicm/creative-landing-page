@@ -254,11 +254,13 @@ a {
 }
 
 .footer {
+  padding: 100px 20px;
+  background-color: #90d4c6;
+}
+.footer__wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 100px 20px;
-  background-color: #90d4c6;
 }
 .footer-logo {
   padding-bottom: 20px;
@@ -268,14 +270,12 @@ a {
 }
 .footer-menu {
   display: flex;
-  justify-content: space-evenly;
-  width: 100%;
+  gap: 70px;
   padding-bottom: 50px;
 }
 .footer-social {
   display: flex;
-  justify-content: space-evenly;
-  width: 60%;
+  gap: 30px;
 }
 
 .nav-menu__item a,
