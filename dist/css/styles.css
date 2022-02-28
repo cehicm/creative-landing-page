@@ -270,8 +270,13 @@ a {
 }
 .footer-menu {
   display: flex;
-  gap: 70px;
-  padding-bottom: 50px;
+  gap: 30px;
+  padding-bottom: 40px;
+}
+@media (min-width: 768px) {
+  .footer-menu {
+    gap: 70px;
+  }
 }
 .footer-social {
   display: flex;

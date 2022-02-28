@@ -21,8 +21,12 @@
 
 	&-menu {
 		display: flex;
-		gap: 70px;
-		padding-bottom: 50px;
+		gap: 30px;
+		padding-bottom: 40px;
+
+		@include sc-breakpoint(768) {
+			gap: 70px;
+		}
 	}
 
 	&-social {
